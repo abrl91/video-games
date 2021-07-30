@@ -16,13 +16,16 @@ import { HomeComponent } from './components/home/home.component';
 import {HttpHeadersInterceptor} from "./interceptors/http-headers.interceptor";
 import {HttpErrorsInterceptor} from "./interceptors/http-errors.interceptor";
 import { GameDetailsComponent } from './components/game-details/game-details.component';
+import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
+import {MatTabsModule} from "@angular/material/tabs";
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
     HomeComponent,
-    GameDetailsComponent
+    GameDetailsComponent,
+    GameTabsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { GameDetailsComponent } from './components/game-details/game-details.com
     MatIconModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatTabsModule,
   ],
   providers: [
     {
